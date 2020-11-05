@@ -37,12 +37,12 @@ export default class CustomerDashboard extends Component {
        method: 'post',
        url: baseUrl+'cart/post',
        data: {
-        // Title: this.state.Itemdata.data.Title,
-        // Price: this.state.Itemdata.data.Price,
-        // EmailAddress: window.user_email
-        Title: "HP OMEN 15-DH1050NR Gaming Laptop 10th Gen...",
-        Price: "85,000",
+        Title: this.state.Itemdata.data.Title,
+        Price: this.state.Itemdata.data.Price,
         EmailAddress: window.user_email
+//         Title: "HP OMEN 15-DH1050NR Gaming Laptop 10th Gen...",
+//         Price: "85,000",
+//         EmailAddress: window.user_email
         },
        headers: { Authorization: `Bearer ${ window.myvar }`}
    };
